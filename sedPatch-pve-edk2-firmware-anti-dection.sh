@@ -49,4 +49,5 @@ sed -i 's/BASE_NAME                      = BaseQemuFwCfgS3LibNull/BASE_NAME     
 sed -i 's/BASE_NAME                      = DxeQemuFwCfgS3LibFwCfg/BASE_NAME                      = Dxe'${brand}'FwCfgS3LibFwCfg/g' OvmfPkg/Library/QemuFwCfgS3Lib/DxeQemuFwCfgS3LibFwCfg.inf
 sed -i 's/BASE_NAME                      = PeiQemuFwCfgS3LibFwCfg/BASE_NAME                      = Pei'${brand}'FwCfgS3LibFwCfg/g' OvmfPkg/Library/QemuFwCfgS3Lib/PeiQemuFwCfgS3LibFwCfg.inf
 sed -i 's/BASE_NAME                      = GenericQemuLoadImageLib/BASE_NAME                      = Generic'${brand}'LoadImageLib/g' OvmfPkg/Library/GenericQemuLoadImageLib/GenericQemuLoadImageLib.inf
+sed -i 's/1920, 1080/1920, 1080}, {2048, 1506}, {2560, 1664}, {2880, 1864},{2880, 1800/g' OvmfPkg/QemuVideoDxe/Initialize.c //c
 echo "结束sed工作"
