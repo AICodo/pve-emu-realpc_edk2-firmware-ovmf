@@ -49,5 +49,5 @@ sed -i 's/BASE_NAME                      = BaseQemuFwCfgS3LibNull/BASE_NAME     
 sed -i 's/BASE_NAME                      = DxeQemuFwCfgS3LibFwCfg/BASE_NAME                      = Dxe'${brand}'FwCfgS3LibFwCfg/g' OvmfPkg/Library/QemuFwCfgS3Lib/DxeQemuFwCfgS3LibFwCfg.inf
 sed -i 's/BASE_NAME                      = PeiQemuFwCfgS3LibFwCfg/BASE_NAME                      = Pei'${brand}'FwCfgS3LibFwCfg/g' OvmfPkg/Library/QemuFwCfgS3Lib/PeiQemuFwCfgS3LibFwCfg.inf
 sed -i 's/BASE_NAME                      = GenericQemuLoadImageLib/BASE_NAME                      = Generic'${brand}'LoadImageLib/g' OvmfPkg/Library/GenericQemuLoadImageLib/GenericQemuLoadImageLib.inf
-sed -i 's/1920, 1080/1920, 1080}, {2048, 1506}, {2560, 1664}, {2880, 1864},{2880, 1800/g' OvmfPkg/QemuVideoDxe/Initialize.c //c
+sed -i 's/1920, 1080/1920, 1080}, {2048, 1506}, {2560, 1664}, {2880, 1864},{2880, 1800},{3024, 1964},{3024, 1900},{3456, 2234/g' OvmfPkg/QemuVideoDxe/Initialize.c //add macbook neo13.0 air13.6 air15.3 pro14.2 pro16.2 dispaly support
 echo "结束sed工作"
