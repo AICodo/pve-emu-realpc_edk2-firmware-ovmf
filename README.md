@@ -1,5 +1,5 @@
 # pve-emu-realpc_edk2-firmware-ovmf
-PVE9 PVE virtual machine emulates a physical machine  ovmf deb（pve虚拟机模拟真实机器ovmf包 ）
+X64 and Arm64 PVE virtual machine emulates a physical machine ovmf deb（X64和Arm64 pve虚拟机模拟真实机器ovmf包 ）
 本项目和pve-emu-realpc 一起使用，详细使用说明请见 pve-emu_realpc 的README.md
 
 ## Star History
