@@ -56,7 +56,6 @@ jobs:
           ls -l artifacts/
           cd artifacts
           rm *legacy*
-          rm *aarch64*
           rm *deps*
           rm *riscv*
           rm *firmware_4*
@@ -69,7 +68,7 @@ jobs:
           tag_name: ${{ format('v{0}', steps.current-time.outputs.formattedTime) }}
           release_name: ${{ format('pve9 emu-realpc pve-edk2-firmware-ovmf build-{0}', steps.current-time.outputs.formattedTime) }}
           body: |
-            build emu-realpc pve-edk2-firmware-ovmf deb
+            build emu-realpc pve-edk2-firmware-ovmf deb x64 and arm64
           draft: false
           prerelease: false
         env:
